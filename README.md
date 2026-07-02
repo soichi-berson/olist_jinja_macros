@@ -19,14 +19,8 @@ Milestone 1 includes:
 - Full model and column documentation via schema.yml
 - Global table materialisation configured in dbt_project.yml
 
-## What This Milestone Adds
 
-### Packages
-Two community packages installed via `packages.yml`:
-- `dbt-labs/dbt_utils` — utility macros including surrogate key generation
-- `calogica/dbt_expectations` — extended data quality test suite
-
-### Custom Macros
+## Custom Macros
 
 | Macro | Purpose | Jinja Feature Demonstrated |
 |---|---|---|
@@ -34,14 +28,6 @@ Two community packages installed via `packages.yml`:
 | `clean_string` | Lowercases and trims whitespace from text fields | Reusable single-argument macro |
 | `coalesce_columns` | Generates a dynamic COALESCE across a list of columns | `for` loop with `loop.last` conditional |
 
-
-## Tech Stack
-
-- dbt Cloud (Fusion)
-- Google BigQuery (EU region)
-- SQL + Jinja2
-- YAML
-- GitHub
 
 ## Data Source
 
